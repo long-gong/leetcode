@@ -21,3 +21,15 @@ target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 set(target_name "can_place_flowers")
 add_library(${target_name} STATIC 605_can_place_flowers.cc)
 target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+set(target_name "is_subsequence")
+add_library(${target_name} STATIC 392_is_subsequence.cc)
+target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+set(target_name "non_decreasing_array")
+add_library(${target_name} STATIC 665_non_decreasing_array.cc)
+target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+set(target_name "buy_sell_stock_II")
+add_library(${target_name} STATIC 122_best_time_buy_sell_stock_II.cc)
+target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

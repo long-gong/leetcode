@@ -41,3 +41,25 @@ target_link_libraries(${target_name} can_place_flowers
         gtest_main)
 add_test(NAME ${target_name}
         COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "is_subsequence_test")
+add_executable(${target_name} "392_is_subsequence_test.cpp")
+target_link_libraries(${target_name} is_subsequence
+        gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
+
+
+set(target_name "non_decreasing_array_test")
+add_executable(${target_name} "665_non_decreasing_array_test.cpp")
+target_link_libraries(${target_name} non_decreasing_array
+        gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "buy_sell_stock_II_test")
+add_executable(${target_name} "122_best_time_buy_sell_stock_II_test.cpp")
+target_link_libraries(${target_name} buy_sell_stock_II
+        gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
