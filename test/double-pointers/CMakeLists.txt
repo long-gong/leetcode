@@ -33,3 +33,17 @@ target_link_libraries(${target_name} merge_sorted_array
         gtest_main)
 add_test(NAME ${target_name}
         COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "linked_list_cycle_test")
+add_executable(${target_name} 141_linked_list_cycle_test.cpp)
+target_link_libraries(${target_name} linked_list_cycle
+        gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "longest_word_test")
+add_executable(${target_name} 524_longest_word_test.cpp)
+target_link_libraries(${target_name} longest_word
+        gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
