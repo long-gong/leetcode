@@ -36,7 +36,7 @@ class KthElement01 : public  KthElementBase {
       else if ( *it > *pivot ) left.push_back(*it);
       else right.push_back(*it);
     }
-    
+
     int llen = static_cast<int>(left.size());
     if ( llen == n - 1 || (llen < n - 1 && llen + cnt >= n) ) return *pivot;
     if ( llen > n - 1 ) {
