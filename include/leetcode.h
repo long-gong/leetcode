@@ -14,6 +14,8 @@
 #include <chrono>
 #include <random>
 #include <cassert>
+#include <stack>
+#include <numeric>
 
 using namespace std;
 #endif //_leetcode_HPP_

@@ -21,3 +21,39 @@ add_executable(${target_name} 083_remove_duplicates_test.cpp)
 target_link_libraries(${target_name} remove_duplicates gtest_main)
 add_test(NAME ${target_name}
         COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "remove_nth_node_test")
+add_executable(${target_name} 019_remove_nth_node_test.cpp)
+target_link_libraries(${target_name} remove_nth_node gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "swap_node_test")
+add_executable(${target_name} 024_swap_node_test.cpp)
+target_link_libraries(${target_name} swap_node gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "add_numbers_II_test")
+add_executable(${target_name} 445_add_numbers_II_test.cpp)
+target_link_libraries(${target_name} add_numbers_II gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "palindrome_test")
+add_executable(${target_name} 234_palindrome_test.cpp)
+target_link_libraries(${target_name} palindrome gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "split_linked_list_test")
+add_executable(${target_name} 725_split_linked_list_test.cpp)
+target_link_libraries(${target_name} split_linked_list gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "odd_even_linked_list_test")
+add_executable(${target_name} 328_odd_even_linked_list_test.cpp)
+target_link_libraries(${target_name} odd_even_linked_list gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
