@@ -16,6 +16,8 @@
 #include <cassert>
 #include <stack>
 #include <numeric>
+#include <bitset>
+#include <memory>
 
 using namespace std;
 #endif //_leetcode_HPP_
