@@ -24,9 +24,8 @@
 
 
 class Solution {
-  int _min{std::numeric_limits<int>::max()};
  public:
-  int ladderLength(string beginWord, string endWord, vector<string>& wordList) ;
-  void ladderLength(string beginWord, string endWord, vector<vector<size_t> >& wordDict, const vector<string> &wordList, int k, int last_mod) ;
+  int ladderLength(string beginWord, string endWord, vector<string> &wordList);
+  int shortestPath(const std::vector<std::vector<int> >& g, const vector<string> &wordList, int t);
 };
 #endif //LEETCODE_127_WORD_LADDER_HH

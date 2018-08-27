@@ -18,6 +18,8 @@
 #include <numeric>
 #include <bitset>
 #include <memory>
+#include <queue>
+#include <unordered_set>
 
 using namespace std;
 #endif //_leetcode_HPP_
