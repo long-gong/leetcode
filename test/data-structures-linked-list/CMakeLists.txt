@@ -57,3 +57,28 @@ add_executable(${target_name} 328_odd_even_linked_list_test.cpp)
 target_link_libraries(${target_name} odd_even_linked_list gtest_main)
 add_test(NAME ${target_name}
         COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "rotate_list_test")
+add_executable(${target_name} 061_rotate_list_test.cpp)
+target_link_libraries(${target_name} rotate_list gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "duplicates_remove_II_test")
+add_executable(${target_name} 082_remove_duplicates_from_sorted_list_II_test.cpp)
+target_link_libraries(${target_name} duplicates_remove_II gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
+
+
+set(target_name "partition_list_test")
+add_executable(${target_name} 086_partition_list_test.cpp)
+target_link_libraries(${target_name} partition_list gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "reverse_linked_list_II_test")
+add_executable(${target_name} 092_reverse_linked_list_II_test.cpp)
+target_link_libraries(${target_name} reverse_linked_list_II gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)

@@ -37,3 +37,19 @@ target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 set(target_name "odd_even_linked_list")
 add_library(${target_name} STATIC common.cc 328_odd_even_linked_list.cc)
 target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+set(target_name "rotate_list")
+add_library(${target_name} STATIC common.cc 061_rotate_list.cc)
+target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+set(target_name "duplicates_remove_II")
+add_library(${target_name} STATIC common.cc 082_remove_duplicates_from_sorted_list_II.cc)
+target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+set(target_name "partition_list")
+add_library(${target_name} STATIC common.cc 086_partition_list.cc)
+target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+set(target_name "reverse_linked_list_II")
+add_library(${target_name} STATIC common.cc 092_reverse_linked_list_II.cc)
+target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
