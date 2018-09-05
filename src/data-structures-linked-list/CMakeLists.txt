@@ -53,3 +53,20 @@ target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 set(target_name "reverse_linked_list_II")
 add_library(${target_name} STATIC common.cc 092_reverse_linked_list_II.cc)
 target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+set(target_name "linked_list_cycle_II")
+add_library(${target_name} STATIC common.cc 142_linked_list_cycle_II.cc)
+target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+
+set(target_name "reorder_list")
+add_library(${target_name} STATIC common.cc 143_reorder_list.cc)
+target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+set(target_name "insertion_sort_list")
+add_library(${target_name} STATIC common.cc 147_insertion_sort_list.cc)
+target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+set(target_name "sort_list")
+add_library(${target_name} STATIC common.cc 148_sort_list.cc)
+target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

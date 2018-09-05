@@ -82,3 +82,28 @@ add_executable(${target_name} 092_reverse_linked_list_II_test.cpp)
 target_link_libraries(${target_name} reverse_linked_list_II gtest_main)
 add_test(NAME ${target_name}
         COMMAND $<TARGET_FILE:${target_name}>)
+
+
+set(target_name "linked_list_cycle_II_test")
+add_executable(${target_name} 142_linked_list_cycle_II_test.cpp)
+target_link_libraries(${target_name} linked_list_cycle_II gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "reorder_list_test")
+add_executable(${target_name} 143_reorder_list_test.cpp)
+target_link_libraries(${target_name} reorder_list gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "insertion_sort_list_test")
+add_executable(${target_name} 147_insertion_sort_list_test.cpp)
+target_link_libraries(${target_name} insertion_sort_list gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "sort_list_test")
+add_executable(${target_name} 148_sort_list_test.cpp)
+target_link_libraries(${target_name} sort_list gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
