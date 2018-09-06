@@ -107,3 +107,9 @@ add_executable(${target_name} 148_sort_list_test.cpp)
 target_link_libraries(${target_name} sort_list gtest_main)
 add_test(NAME ${target_name}
         COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "remove_list_test")
+add_executable(${target_name} 203_remove_linked_list.cpp)
+target_link_libraries(${target_name} remove_list gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)

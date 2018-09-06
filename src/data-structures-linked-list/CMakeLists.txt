@@ -70,3 +70,7 @@ target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 set(target_name "sort_list")
 add_library(${target_name} STATIC common.cc 148_sort_list.cc)
 target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+set(target_name "remove_list")
+add_library(${target_name} STATIC common.cc 203_remove_linked_list.cc)
+target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
