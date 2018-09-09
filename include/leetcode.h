@@ -20,6 +20,7 @@
 #include <memory>
 #include <queue>
 #include <unordered_set>
+#include <climits>
 
 using namespace std;
 #endif //_leetcode_HPP_
