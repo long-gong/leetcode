@@ -6,7 +6,7 @@
 
 
 int Solution::networkDelayTime(vector<vector<int>> &times, int N, int K) {
-  const int inf = -1;
+  const int inf = std::numeric_limits<int>::max();
   std::vector<int> delay(N, inf);
 
   std::vector<std::vector<std::pair<int, int> > > g(N);
@@ -15,19 +15,20 @@ int Solution::networkDelayTime(vector<vector<int>> &times, int N, int K) {
     g[e[0] - 1].push_back( {e[1] - 1, e[2]} );
   }
   delay[K - 1] = 0;
-  std::priority_queue<int, std::vector<int>, Cmp> q{Solution::Cmp(delay, inf)};
-  q.push(K - 1);
+  //std::priority_queue<int, std::vector<int>, Cmp> q{Solution::Cmp(delay, inf)};
+  std::vector<int> q;
+  int i = 0;
+  while ( i < N ) { q.push_back(i) ; ++ i; }
   while (!q.empty()) {
-    auto c = q.top();
-    q.pop();
+    auto mi = std::min_element(q.begin(), q.end(), [&](const int a, const int b){
+      return delay[a] < delay[b];
+    });
+    std::swap(*mi, q.back());
+    auto c = q.back();
+    q.pop_back();
     for  ( const auto &nei : g[c] ) {
-      auto dis = delay[nei.first];
-      if ( dis == inf ) {
-        delay[nei.first] = delay[c] + nei.second;
-        q.push( nei.first );
-      } else {
-        delay[nei.first] = std::min(delay[c] + nei.second, dis);
-      }
+      auto dis = delay[c] + nei.second;
+      delay[nei.first] = std::min(dis, delay[nei.first]);
     }
   }
 

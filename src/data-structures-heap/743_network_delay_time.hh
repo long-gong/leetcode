@@ -17,18 +17,6 @@
 #include <leetcode.h>
 
 class Solution {
-  class Cmp
-  {
-    const std::vector<int>& _metrics;
-    int _inf;
-
-   public:
-    explicit Cmp(const std::vector<int>& metrics, int inf) : _metrics(metrics), _inf(inf){}
-    bool operator() (const int& lhs, const int&rhs) const
-    {
-     return ( _metrics[lhs] != _inf && _metrics[lhs] < _metrics[rhs] );
-    }
-  };
  public:
   int networkDelayTime(vector<vector<int>>& times, int N, int K) ;
 };
