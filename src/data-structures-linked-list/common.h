@@ -21,6 +21,27 @@ struct ListNode {
   static bool compare(std::initializer_list<int> l, ListNode *lb);
 };
 
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+struct TreeNode {
+  int val;
+  TreeNode *left;
+  TreeNode *right;
+  explicit TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+};
+
+struct RandomListNode {
+       int label;
+       RandomListNode *next, *random;
+       explicit RandomListNode(int x) : label(x), next(nullptr), random(nullptr) {}
+};
 
 template<typename T>
 void deleten(T *&ptr) {

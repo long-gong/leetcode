@@ -74,3 +74,11 @@ target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 set(target_name "remove_list")
 add_library(${target_name} STATIC common.cc 203_remove_linked_list.cc)
 target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+set(target_name "ll2bst")
+add_library(${target_name} STATIC common.cc 109_convert_sorted_list_to_bst.cc)
+target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+set(target_name "copy_list_wr")
+add_library(${target_name} STATIC common.cc 138_copy_list_with_random_pointer.cc)
+target_include_directories(${target_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

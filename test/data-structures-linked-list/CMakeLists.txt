@@ -109,7 +109,19 @@ add_test(NAME ${target_name}
         COMMAND $<TARGET_FILE:${target_name}>)
 
 set(target_name "remove_list_test")
-add_executable(${target_name} 203_remove_linked_list.cpp)
+add_executable(${target_name} 203_remove_linked_list_test.cpp)
 target_link_libraries(${target_name} remove_list gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "ll2bst_test")
+add_executable(${target_name} 109_convert_sorted_list_to_bst_test.cpp)
+target_link_libraries(${target_name} ll2bst gtest_main)
+add_test(NAME ${target_name}
+        COMMAND $<TARGET_FILE:${target_name}>)
+
+set(target_name "copy_list_wr_test")
+add_executable(${target_name} 138_copy_list_with_random_pointer_test.cpp)
+target_link_libraries(${target_name} copy_list_wr gtest_main)
 add_test(NAME ${target_name}
         COMMAND $<TARGET_FILE:${target_name}>)
