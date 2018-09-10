@@ -12,4 +12,9 @@
  */
 #include <leetcode.h>
 
+class Solution {
+ public:
+  int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int K);
+  
+};
 #endif //LEETCODE_787_CHEAPEST_FLIGHTS_WTHIN_K_STOPS_HH
