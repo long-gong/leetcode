@@ -21,6 +21,8 @@
 #include <queue>
 #include <unordered_set>
 #include <climits>
+#include <cstring>
+#include <cstdlib>
 
 using namespace std;
 #endif //_leetcode_HPP_
