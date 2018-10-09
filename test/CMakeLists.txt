@@ -10,3 +10,5 @@ add_subdirectory(data-structures-heap)
 add_subdirectory(ds-stack)
 add_subdirectory(search)
 add_subdirectory(others)
+
+add_subdirectory(casual)
